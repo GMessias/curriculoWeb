@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.938;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    color: #15181c;
+    background-color: #ededed;
+}
+
+h1,h2,h3{
+    font-weight: 500;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 1.25rem;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+p{
+    text-indent: 1.5rem;
+}
+
+body.dark-theme{
+    color: #eeecee;
+    background-color: #252a2e;
+}
+
+.bx-sun:before{
+    color: #ededed;
+}
+
+.change-theme{
+    color: #15181c;
+    cursor: pointer;
+}
+
+.size-download{
+    font-size: 1.5rem;
+}
+
+.size-trophy{
+    font-size: 1.5rem;
+}
+
+.small-font-size{
+    font-size: 0.875rem;
+}
+
+.smaller-font-size{
+    font-size: 0.813rem;
+}
+
+.font-medium{
+    font-weight: 500;
+}
+
+.font-semi-bold{
+    font-weight: 600;
+}
+
+.container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    row-gap: 1.6rem;
+}
+
+.margin-top-1{
+    margin-top: 0.6rem;
+}
+
+.margin-top-2{
+    margin-top: 0.4rem;
+}
+
+.margin-left-1{
+    margin-left: 0.6rem;
+}
+
+.margin-bot-3{
+    margin-bottom: 0.2rem;
+}
+
+.grid-profile{
+    display: grid;
+    grid-template-columns: repeat(12,minmax(0,1fr));
+}
+
+.icon-dark-light{
+    font-size: 1.6rem;
+    grid-column: 11 / span 1;
+    display: flex;
+    align-items: end;
+}
+
+.my-image{
+    grid-column: 4 / span 6;
+}
+
+.profile{
+    grid-column-start: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-li-contacts{
+    font-size: 1.3rem;
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-info{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.experience-info-title{
+    grid-column: 1 / span 2;
+}
+
+.experience-info-date{
+    grid-column: 1;
+}
+
+.experience-info-job{
+    grid-column: 2;
+}
+
+.experience-info-activity{
+    grid-column: 1 / span 2;
+}
+
+.grid-interests{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    row-gap: 0.4rem;
+}
+
+.flex-interests{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.font-size-icon-interests{
+    font-size: 1.3rem;
+}
+
+.photo{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.contacts{
+    margin-top: 0.6rem;
+}
+
+.education{
+    margin-top: 0.6rem;
+}
+
+.experience{
+    margin-top: 0.6rem;
+}
+
+.certificate{
+    margin-top: 0.6rem;
+}
+
+.interests{
+    margin-top: 0.6rem;
+}
+
+@media (min-width: 968px) and (max-height: 1585px){
+    .container{
+            grid-template-columns: repeat(12,minmax(0,1fr));
+    }
+
+    .left{
+        grid-column: 2 / span 4;
+    }
+
+    .right{
+        grid-column: 7 / span 5;
+        grid-row-start: 1;
+    }
+
+    .resume{
+        margin-top: 0.6rem;
+    }
+
+    .grid-interests{
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+}
+
+@media (min-height: 846px){
+    html{
+        font-size: 150%;
+    }
+}
+
+@media (min-width: 1500px) and (min-height: 1586px){
+    html{
+        font-size: 230%;
+    }
+
+    .container{
+        grid-template-columns: repeat(12,minmax(0,1fr));
+    }
+
+    .left{
+        grid-column: 2 / span 4;
+    }
+
+    .right{
+        grid-column: 7 / span 5;
+        grid-row-start: 1;
+    }
+
+    .resume{
+        margin-top: 0.6rem;
+    }
+
+    .grid-interests{
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+}
+
+@media (min-height: 1586px){
+    html{
+        font-size: 230%;
+    }
+}
